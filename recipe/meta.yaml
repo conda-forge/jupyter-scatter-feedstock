@@ -29,6 +29,8 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
+    - scipy
+    - seaborn
     - traittypes >=0.2.1
     - typing-extensions
 
