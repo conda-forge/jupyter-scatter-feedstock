@@ -1,5 +1,5 @@
 {% set name = "jupyter-scatter" %}
-{% set version = "0.19.1" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyter_scatter-{{ version }}.tar.gz
-  sha256: 67c4b8c66723933010c1a4508c5ef8bd17d16212761879acb64eef7af77468dc
+  sha256: 50d48faedbdc26416dc3a5cf768799096b5cb18e9589684b9e3354a87aabf885
 
 build:
   noarch: python
