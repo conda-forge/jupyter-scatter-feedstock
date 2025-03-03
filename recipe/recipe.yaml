@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jupyter-scatter
-  version: 0.21.0
+  version: 0.21.1
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jupyter_scatter-${{ version }}.tar.gz
-  sha256: 7d6a267043e40d34f0636d7296a51c58a8ae99a8b555edb169e95b1215fbedfa
+  sha256: dff6e8d67cea5f30ac5460aa379dd2a0df354a833ff5c4ade5ea3b2e1744d5fd
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -44,12 +44,7 @@ tests:
       imports:
         - jscatter
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: An interactive scatter plot widget for Jupyter Notebook, Lab, and Google Colab that can handle millions of points and supports view linking
@@ -62,3 +57,4 @@ about:
 extra:
   recipe-maintainers:
     - thewchan
+    - hadim
