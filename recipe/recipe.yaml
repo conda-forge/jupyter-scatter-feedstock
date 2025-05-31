@@ -51,7 +51,7 @@ tests:
       python_version: ${{ python_min }}.*
       pip_check: true
   - script:
-    - jyputer-scatter --help
+    - jupyter-scatter --help
     requirements:
       run:
         - python ${{ python_min }}.*
