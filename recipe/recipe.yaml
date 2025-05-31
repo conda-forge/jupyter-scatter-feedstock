@@ -50,7 +50,7 @@ tests:
   - script:
     - jyputer-scatter --help
     requirements:
-      - run:
+      run:
         - python ${{ python_min }}.*
 
 about:
