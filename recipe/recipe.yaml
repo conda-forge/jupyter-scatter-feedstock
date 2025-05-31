@@ -40,6 +40,8 @@ requirements:
     - pyarrow
     - scipy
     - typing-extensions
+    # Not listed but needed to pass import test
+    - seaborn
 
 tests:
   - python:
