@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jupyter-scatter
-  version: "0.22.3"
+  version: "1.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jupyter_scatter-${{ version }}.tar.gz
-  sha256: fde8655ba3dd784eddb3fcb7887f7df845243e70e2d486ca794ea6498879bcf3
+  sha256: 5782bfc979506308ece1802ecb811de8b1b49a9f8e114a51fccd74f0cb7dce24
 
 build:
   number: 0
